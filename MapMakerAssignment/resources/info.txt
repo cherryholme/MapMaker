@@ -1,0 +1,5 @@
+Class: OOP with Design Patterns - 18F_Cst8288_010
+Christian Fortin-Cherryholme
+Oct 12 2018
+Chrischerryholme@gmail.com
+fort0262@algonquinlive.com
