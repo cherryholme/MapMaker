@@ -211,6 +211,10 @@ public class PolyShapeSkeleton2 extends Polygon{
 		return Math.sqrt( (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 	}
 
+	public void translate( double deltaX, double deltaY){
+	for(ControlPointSkeleton c: cPoints)
+		c.translate(deltaX, deltaY);
+	}
 	/**
 	 * <p>
 	 * this method will recalculate the points inside of the shape based in the staring and current position of mouse.</br>

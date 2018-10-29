@@ -146,16 +146,16 @@ public class MapAreaSkeleton extends Pane {
 			break;
 		case Move:
             //used similar structure as well as variable name from code found on stackoverflow, link: https://stackoverflow.com/questions/27080039/proper-way-to-move-a-javafx8-node-around
-			double deltaX = e.getSceneX() - startX;
-			double deltaY = e.getSceneY() - startY;
-			((Node) e.getTarget()).setLayoutX(((Node) e.getTarget()).getLayoutX() + deltaX);
-			((Node) e.getTarget()).setLayoutY(((Node) e.getTarget()).getLayoutY() + deltaY);
+			double deltaX = e.getX() - startX;
+			double deltaY = e.getY() - startY;
+			((PolyShapeSkeleton2) e.getTarget()).translate(deltaX,deltaY);
+	
 			
 			
 			
 
-			startX = e.getSceneX();
-			startY = e.getSceneY();
+			startX = e.getX();
+			startY = e.getY();
 
 			// startX = e.getX();
 			// startY = e.getY();
